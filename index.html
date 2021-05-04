@@ -9,66 +9,69 @@
 </head>
 <body>
 
-    <header>
-        <h1>Create Your Burger</h1>
-        <img src="./assets/img/burger-top.png" alt="">
-    </header>
-
-    <main>
-        <input type="text" class="name_it" placeholder="Name Your Burger">
-
-        <h3>Ingredients</h3>
-        <div>
-            <div class="list">
-                <div class="row">
-                    <img src="./assets/img/cheese.svg" alt="cheese drawing">
-                    <p>Cheese</p>
-                    <input type="checkbox" id="cheese" data-price="1">add
-                </div>
-                <div class="row">
-                    <img src="./assets/img/fried-egg.svg" alt="fried egg drawing">
-                    <p>Egg</p>
-                    <input type="checkbox" data-price="1">add
-                </div>
-                <div class="row">
-                    <img src="./assets/img/mustard.svg" alt="mustard drawing">
-                    <p>Mustard</p>
-                    <input type="checkbox" data-price="1">add
-                </div>
-            </div> <!-- /list l-->
-            <div class="list">
-                <div class="row">
-                    <img src="./assets/img/tomato.svg" alt="tomato drawing">
-                    <p>Tomato</p>
-                    <input type="checkbox" data-price="1">add
-                </div>
-                <div class="row">
-                    <img src="./assets/img/lettuce.svg" alt="lettuce drawing">
-                    <p>Lettuce</p>
-                    <input type="checkbox" data-price="1">add
-                </div>
-                <div class="row">
-                    <img src="./assets/img/ketchup.svg" alt="ketchup drawing">
-                    <p>Ketchup</p>
-                    <input type="checkbox" data-price="1">add
-                </div>
-            </div> <!-- /list r -->
-        </div> 
-
-        <div class="coupon">
-            <p>Discount Coupon</p>
-            <input type="text" class="orange" id="cpn">
-        </div>
-
-        <div class="calc">
-            <button class="calc_btn">calculate</button>
-        </div>
-    </main>
-
-    <footer>
-        <h3>Your Price</h3>
-        <h2 id="prezzo"></h2>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>Create Your Burger</h1>
+            <img src="./assets/img/burger-top.png" alt="">
+        </header>
+    
+        <main>
+            <input type="text" class="name_it" placeholder="Name Your Burger">
+    
+            <h3>Ingredients</h3>
+            <div>
+                <div class="list">
+                    <div class="row">
+                        <img src="./assets/img/cheese.svg" alt="cheese drawing">
+                        <p>Cheese</p>
+                        <input type="checkbox" id="cheese" data-price="1">add
+                    </div>
+                    <div class="row">
+                        <img src="./assets/img/fried-egg.svg" alt="fried egg drawing">
+                        <p>Egg</p>
+                        <input type="checkbox" data-price="1">add
+                    </div>
+                    <div class="row">
+                        <img src="./assets/img/mustard.svg" alt="mustard drawing">
+                        <p>Mustard</p>
+                        <input type="checkbox" data-price="1">add
+                    </div>
+                </div> <!-- /list l-->
+                <div class="list">
+                    <div class="row">
+                        <img src="./assets/img/tomato.svg" alt="tomato drawing">
+                        <p>Tomato</p>
+                        <input type="checkbox" data-price="1">add
+                    </div>
+                    <div class="row">
+                        <img src="./assets/img/lettuce.svg" alt="lettuce drawing">
+                        <p>Lettuce</p>
+                        <input type="checkbox" data-price="1">add
+                    </div>
+                    <div class="row">
+                        <img src="./assets/img/ketchup.svg" alt="ketchup drawing">
+                        <p>Ketchup</p>
+                        <input type="checkbox" data-price="1">add
+                    </div>
+                </div> <!-- /list r -->
+            </div> 
+    
+            <div class="coupon">
+                <p>Discount Coupon</p>
+                <input type="text" class="orange" id="cpn">
+            </div>
+    
+            <div class="calc">
+                <button class="calc_btn">calculate</button>
+            </div>
+        </main>
+    
+        <footer>
+            <h3>Your Price</h3>
+            <h2 id="prezzo"></h2>
+        </footer>
+        
+    </div>
     
 
     <script src="./assets/main.js"></script>
