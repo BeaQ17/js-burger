@@ -1,0 +1,89 @@
+/* commons */
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0; 
+}
+
+.dbg{
+    border: 1px solid red;
+    height: 100px;
+    width: 100px;
+}
+
+
+/* header */
+
+header{
+    background-color: yellow;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+
+/* main */
+.name_it{
+    border: none;
+    font-size: 25px;
+    color: gray;
+}
+
+.list{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.row{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 35px;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+}
+
+.coupon{
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.orange{
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 166, 0, 0.445);
+}
+
+.calc{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.calc_btn{
+    border-radius: 5px;
+    border: 1px solid rgb(255, 123, 0);
+    background-color: orange;
+    padding: 15px;
+}
+
+.calc_btn:hover{
+    background-color: rgb(255, 123, 0);
+}
+
+/* footer */
+footer{
+    background-color: rgb(255, 0, 76);
+    display: inline-flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
