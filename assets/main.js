@@ -16,13 +16,27 @@ document.querySelector(".calc_btn").addEventListener("click", function () {
 
     //calcola il prezzo
     var price = base + addons;
-    console.log(price);
-    document.getElementById("prezzo").innerHTML = "$ " + price;
+    
+    var coupon = ["ABCDE12345", "ABCDE67890", "FGHIL12345", "FGHIL67890"];
+    var c_utente = document.getElementById("cpn").value;
+
+    for(var i=0; i<coupon.length; i++){
+        if (c_utente == coupon[i]) {
+            var new_price = Math.round(((price - ((price / 100) * 20))) * 100) / 100.0;
+            document.getElementById("prezzo").innerHTML = "$ " + new_price;
+            console.log(new_price);
+        } else{
+            document.getElementById("prezzo").innerHTML = "$ " + price;
+            console.log(price);
+        }
+    
+    } 
 
 });
 
 
-
+//ISSUE
+// - I get both the discounted price and the full price in console, but only the full price on webpage
 
 
 
