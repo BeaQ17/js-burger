@@ -20,8 +20,8 @@ document.querySelector(".calc_btn").addEventListener("click", function () {
     var coupon = ["ABCDE12345", "ABCDE67890", "FGHIL12345", "FGHIL67890"];
     var c_utente = document.getElementById("cpn").value;
 
-    for(var i=0; i<coupon.length; i++){
-        if (c_utente == coupon[i]) {
+    
+        if (coupon.includes(c_utente)) {
             var new_price = Math.round(((price - ((price / 100) * 20))) * 100) / 100.0;
             document.getElementById("prezzo").innerHTML = "$ " + new_price;
             console.log(new_price);
@@ -29,10 +29,9 @@ document.querySelector(".calc_btn").addEventListener("click", function () {
             document.getElementById("prezzo").innerHTML = "$ " + price;
             console.log(price);
         }
-    
-    } 
 
 });
+
 
 
 //ISSUE
