@@ -34,8 +34,7 @@ document.querySelector(".calc_btn").addEventListener("click", function () {
 
 
 
-//ISSUE
-// - I get both the discounted price and the full price in console, but only the full price on webpage
+
 
 
 
